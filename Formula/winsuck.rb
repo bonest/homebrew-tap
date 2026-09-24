@@ -5,6 +5,8 @@ class Winsuck < Formula
   sha256 "395ab2bc339b9329a23b9826a3047be4f729e3b692324c8e08633015784788cc"
   license "MIT"
 
+  skip_clean "bin/winsuck.exe"
+
   on_linux do
     resource "windows-sender" do
       url "https://github.com/bonest/winsuck/releases/download/v0.1.0/winsuck_0.1.0_windows_amd64.zip"
