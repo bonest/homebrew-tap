@@ -18,6 +18,7 @@ class Winsuck < Formula
     bin.install "winsuck"
     resource("windows-sender").stage do
       bin.install "winsuck.exe"
+      chmod 0755, bin/"winsuck.exe"
     end
   end
 
